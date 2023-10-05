@@ -1,8 +1,13 @@
-// Copyright (c) 2023, Hamza ALsaqaf and contributors
-// For license information, please see license.txt
 
 frappe.ui.form.on('Student', {
-	// refresh: function(frm) {
-
-	// }
+	collage: function (frm){
+		console.log(frm.doc.collage);
+		frm.set_query("department", function() {
+			return {
+				"filters": {
+					"collage": frm.doc.collage
+				}
+			};
+		});
+	}
 });

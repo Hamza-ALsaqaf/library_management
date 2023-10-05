@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestCollage(FrappeTestCase):
+class TestBookCopy(FrappeTestCase):
 	pass

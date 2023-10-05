@@ -1,7 +1,8 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-09-28 10:18:23.841691",
+ "autoname": "field:id",
+ "creation": "2023-09-14 12:49:43.849985",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -39,15 +40,17 @@
   {
    "fieldname": "id",
    "fieldtype": "Data",
-   "label": "ID"
+   "label": "ID",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-28 10:18:23.841691",
+ "modified": "2023-09-28 09:43:15.975402",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Student",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -63,9 +66,7 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }

@@ -1,23 +1,25 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-09-28 09:58:27.294970",
+ "autoname": "field:department",
+ "creation": "2023-09-14 12:44:00.127437",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "department",
-  "callage"
+  "collage"
  ],
  "fields": [
   {
    "fieldname": "department",
    "fieldtype": "Data",
-   "label": "Department"
+   "label": "Department",
+   "unique": 1
   },
   {
-   "fieldname": "callage",
+   "fieldname": "collage",
    "fieldtype": "Link",
    "label": "Collage",
    "options": "Collage"
@@ -25,10 +27,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-28 10:03:44.588668",
+ "modified": "2023-09-14 12:44:00.127437",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Department",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -44,9 +47,7 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }

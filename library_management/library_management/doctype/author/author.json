@@ -1,7 +1,8 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2023-09-28 10:07:18.524587",
+ "autoname": "field:full_name",
+ "creation": "2023-09-14 10:15:40.021826",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -10,37 +11,42 @@
   "full_name",
   "about",
   "birth_of_date",
-  "country"
+  "counrty"
  ],
  "fields": [
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full Name"
+   "label": "Full Name",
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "birth_of_date",
+   "fieldtype": "Date",
+   "label": "Birth Of Date"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "counrty",
+   "fieldtype": "Link",
+   "label": "Counrty",
+   "options": "Country"
   },
   {
    "fieldname": "about",
    "fieldtype": "Text",
    "label": "About"
-  },
-  {
-   "fieldname": "birth_of_date",
-   "fieldtype": "Data",
-   "label": "Birth Of Date"
-  },
-  {
-   "fieldname": "country",
-   "fieldtype": "Link",
-   "label": "Country",
-   "options": "Country"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-28 10:07:18.524587",
+ "modified": "2023-09-28 00:27:43.255672",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Author",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -59,6 +65,5 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }
